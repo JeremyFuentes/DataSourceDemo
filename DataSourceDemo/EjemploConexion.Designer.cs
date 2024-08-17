@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploConexion));
             System.Windows.Forms.Label companyNameLabel;
             System.Windows.Forms.Label contactNameLabel;
             System.Windows.Forms.Label contactTitleLabel;
@@ -40,22 +39,24 @@
             System.Windows.Forms.Label countryLabel;
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label faxLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploConexion));
+            System.Windows.Forms.Label label1;
             this.northwindDataSet = new DataSourceDemo.NorthwindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new DataSourceDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new DataSourceDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
             this.customersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.customersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.companyNameTextBox = new System.Windows.Forms.TextBox();
             this.contactNameTextBox = new System.Windows.Forms.TextBox();
@@ -67,6 +68,7 @@
             this.countryTextBox = new System.Windows.Forms.TextBox();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.faxTextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             companyNameLabel = new System.Windows.Forms.Label();
             contactNameLabel = new System.Windows.Forms.Label();
             contactTitleLabel = new System.Windows.Forms.Label();
@@ -77,11 +79,112 @@
             countryLabel = new System.Windows.Forms.Label();
             phoneLabel = new System.Windows.Forms.Label();
             faxLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
             this.customersBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // companyNameLabel
+            // 
+            companyNameLabel.AutoSize = true;
+            companyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            companyNameLabel.Location = new System.Drawing.Point(108, 114);
+            companyNameLabel.Name = "companyNameLabel";
+            companyNameLabel.Size = new System.Drawing.Size(133, 20);
+            companyNameLabel.TabIndex = 3;
+            companyNameLabel.Text = "Company Name:";
+            // 
+            // contactNameLabel
+            // 
+            contactNameLabel.AutoSize = true;
+            contactNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactNameLabel.Location = new System.Drawing.Point(108, 152);
+            contactNameLabel.Name = "contactNameLabel";
+            contactNameLabel.Size = new System.Drawing.Size(121, 20);
+            contactNameLabel.TabIndex = 5;
+            contactNameLabel.Text = "Contact Name:";
+            // 
+            // contactTitleLabel
+            // 
+            contactTitleLabel.AutoSize = true;
+            contactTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactTitleLabel.Location = new System.Drawing.Point(108, 186);
+            contactTitleLabel.Name = "contactTitleLabel";
+            contactTitleLabel.Size = new System.Drawing.Size(109, 20);
+            contactTitleLabel.TabIndex = 7;
+            contactTitleLabel.Text = "Contact Title:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.Location = new System.Drawing.Point(108, 224);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(76, 20);
+            addressLabel.TabIndex = 9;
+            addressLabel.Text = "Address:";
+            // 
+            // cityLabel
+            // 
+            cityLabel.AutoSize = true;
+            cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cityLabel.Location = new System.Drawing.Point(108, 261);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(43, 20);
+            cityLabel.TabIndex = 11;
+            cityLabel.Text = "City:";
+            // 
+            // regionLabel
+            // 
+            regionLabel.AutoSize = true;
+            regionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            regionLabel.Location = new System.Drawing.Point(108, 299);
+            regionLabel.Name = "regionLabel";
+            regionLabel.Size = new System.Drawing.Size(66, 20);
+            regionLabel.TabIndex = 13;
+            regionLabel.Text = "Region:";
+            // 
+            // postalCodeLabel
+            // 
+            postalCodeLabel.AutoSize = true;
+            postalCodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            postalCodeLabel.Location = new System.Drawing.Point(108, 338);
+            postalCodeLabel.Name = "postalCodeLabel";
+            postalCodeLabel.Size = new System.Drawing.Size(105, 20);
+            postalCodeLabel.TabIndex = 15;
+            postalCodeLabel.Text = "Postal Code:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.Location = new System.Drawing.Point(108, 377);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(72, 20);
+            countryLabel.TabIndex = 17;
+            countryLabel.Text = "Country:";
+            // 
+            // phoneLabel
+            // 
+            phoneLabel.AutoSize = true;
+            phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            phoneLabel.Location = new System.Drawing.Point(108, 415);
+            phoneLabel.Name = "phoneLabel";
+            phoneLabel.Size = new System.Drawing.Size(61, 20);
+            phoneLabel.TabIndex = 19;
+            phoneLabel.Text = "Phone:";
+            // 
+            // faxLabel
+            // 
+            faxLabel.AutoSize = true;
+            faxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            faxLabel.Location = new System.Drawing.Point(108, 453);
+            faxLabel.Name = "faxLabel";
+            faxLabel.Size = new System.Drawing.Size(41, 20);
+            faxLabel.TabIndex = 21;
+            faxLabel.Text = "Fax:";
             // 
             // northwindDataSet
             // 
@@ -130,9 +233,34 @@
             this.customersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customersBindingNavigator.Name = "customersBindingNavigator";
             this.customersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customersBindingNavigator.Size = new System.Drawing.Size(1062, 27);
+            this.customersBindingNavigator.Size = new System.Drawing.Size(1062, 31);
             this.customersBindingNavigator.TabIndex = 0;
             this.customersBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -140,7 +268,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
             // 
             // bindingNavigatorMovePreviousItem
@@ -149,13 +277,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -167,17 +295,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -185,7 +306,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -194,50 +315,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // customersBindingNavigatorSaveItem
             // 
             this.customersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.customersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customersBindingNavigatorSaveItem.Image")));
             this.customersBindingNavigatorSaveItem.Name = "customersBindingNavigatorSaveItem";
-            this.customersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.customersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.customersBindingNavigatorSaveItem.Text = "Guardar datos";
             this.customersBindingNavigatorSaveItem.Click += new System.EventHandler(this.customersBindingNavigatorSaveItem_Click);
-            // 
-            // companyNameLabel
-            // 
-            companyNameLabel.AutoSize = true;
-            companyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            companyNameLabel.Location = new System.Drawing.Point(108, 114);
-            companyNameLabel.Name = "companyNameLabel";
-            companyNameLabel.Size = new System.Drawing.Size(133, 20);
-            companyNameLabel.TabIndex = 3;
-            companyNameLabel.Text = "Company Name:";
             // 
             // companyNameTextBox
             // 
@@ -248,16 +341,6 @@
             this.companyNameTextBox.Size = new System.Drawing.Size(200, 27);
             this.companyNameTextBox.TabIndex = 4;
             // 
-            // contactNameLabel
-            // 
-            contactNameLabel.AutoSize = true;
-            contactNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            contactNameLabel.Location = new System.Drawing.Point(108, 152);
-            contactNameLabel.Name = "contactNameLabel";
-            contactNameLabel.Size = new System.Drawing.Size(121, 20);
-            contactNameLabel.TabIndex = 5;
-            contactNameLabel.Text = "Contact Name:";
-            // 
             // contactNameTextBox
             // 
             this.contactNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactName", true));
@@ -266,16 +349,6 @@
             this.contactNameTextBox.Name = "contactNameTextBox";
             this.contactNameTextBox.Size = new System.Drawing.Size(200, 27);
             this.contactNameTextBox.TabIndex = 6;
-            // 
-            // contactTitleLabel
-            // 
-            contactTitleLabel.AutoSize = true;
-            contactTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            contactTitleLabel.Location = new System.Drawing.Point(108, 186);
-            contactTitleLabel.Name = "contactTitleLabel";
-            contactTitleLabel.Size = new System.Drawing.Size(109, 20);
-            contactTitleLabel.TabIndex = 7;
-            contactTitleLabel.Text = "Contact Title:";
             // 
             // contactTitleTextBox
             // 
@@ -286,16 +359,6 @@
             this.contactTitleTextBox.Size = new System.Drawing.Size(200, 27);
             this.contactTitleTextBox.TabIndex = 8;
             // 
-            // addressLabel
-            // 
-            addressLabel.AutoSize = true;
-            addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            addressLabel.Location = new System.Drawing.Point(108, 224);
-            addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(76, 20);
-            addressLabel.TabIndex = 9;
-            addressLabel.Text = "Address:";
-            // 
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
@@ -304,16 +367,6 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(200, 27);
             this.addressTextBox.TabIndex = 10;
-            // 
-            // cityLabel
-            // 
-            cityLabel.AutoSize = true;
-            cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cityLabel.Location = new System.Drawing.Point(108, 261);
-            cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(43, 20);
-            cityLabel.TabIndex = 11;
-            cityLabel.Text = "City:";
             // 
             // cityTextBox
             // 
@@ -324,16 +377,6 @@
             this.cityTextBox.Size = new System.Drawing.Size(200, 27);
             this.cityTextBox.TabIndex = 12;
             // 
-            // regionLabel
-            // 
-            regionLabel.AutoSize = true;
-            regionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            regionLabel.Location = new System.Drawing.Point(108, 299);
-            regionLabel.Name = "regionLabel";
-            regionLabel.Size = new System.Drawing.Size(66, 20);
-            regionLabel.TabIndex = 13;
-            regionLabel.Text = "Region:";
-            // 
             // regionTextBox
             // 
             this.regionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Region", true));
@@ -342,16 +385,6 @@
             this.regionTextBox.Name = "regionTextBox";
             this.regionTextBox.Size = new System.Drawing.Size(200, 27);
             this.regionTextBox.TabIndex = 14;
-            // 
-            // postalCodeLabel
-            // 
-            postalCodeLabel.AutoSize = true;
-            postalCodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            postalCodeLabel.Location = new System.Drawing.Point(108, 338);
-            postalCodeLabel.Name = "postalCodeLabel";
-            postalCodeLabel.Size = new System.Drawing.Size(105, 20);
-            postalCodeLabel.TabIndex = 15;
-            postalCodeLabel.Text = "Postal Code:";
             // 
             // postalCodeTextBox
             // 
@@ -362,16 +395,6 @@
             this.postalCodeTextBox.Size = new System.Drawing.Size(200, 27);
             this.postalCodeTextBox.TabIndex = 16;
             // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            countryLabel.Location = new System.Drawing.Point(108, 377);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(72, 20);
-            countryLabel.TabIndex = 17;
-            countryLabel.Text = "Country:";
-            // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Country", true));
@@ -380,16 +403,6 @@
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(200, 27);
             this.countryTextBox.TabIndex = 18;
-            // 
-            // phoneLabel
-            // 
-            phoneLabel.AutoSize = true;
-            phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            phoneLabel.Location = new System.Drawing.Point(108, 415);
-            phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(61, 20);
-            phoneLabel.TabIndex = 19;
-            phoneLabel.Text = "Phone:";
             // 
             // phoneTextBox
             // 
@@ -400,16 +413,6 @@
             this.phoneTextBox.Size = new System.Drawing.Size(200, 27);
             this.phoneTextBox.TabIndex = 20;
             // 
-            // faxLabel
-            // 
-            faxLabel.AutoSize = true;
-            faxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            faxLabel.Location = new System.Drawing.Point(108, 453);
-            faxLabel.Name = "faxLabel";
-            faxLabel.Size = new System.Drawing.Size(41, 20);
-            faxLabel.TabIndex = 21;
-            faxLabel.Text = "Fax:";
-            // 
             // faxTextBox
             // 
             this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Fax", true));
@@ -419,11 +422,32 @@
             this.faxTextBox.Size = new System.Drawing.Size(200, 27);
             this.faxTextBox.TabIndex = 22;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(108, 72);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(99, 20);
+            label1.TabIndex = 23;
+            label1.Text = "CustomerID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CustomerID", true));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(264, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 27);
+            this.textBox1.TabIndex = 24;
+            // 
             // EjemploConexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.Controls.Add(label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(companyNameLabel);
             this.Controls.Add(this.companyNameTextBox);
             this.Controls.Add(contactNameLabel);
@@ -487,5 +511,6 @@
         private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.TextBox faxTextBox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
