@@ -39,8 +39,8 @@
             System.Windows.Forms.Label countryLabel;
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label faxLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploConexion));
             System.Windows.Forms.Label label1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploConexion));
             this.northwindDataSet = new DataSourceDemo.NorthwindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new DataSourceDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
@@ -185,6 +185,16 @@
             faxLabel.Size = new System.Drawing.Size(41, 20);
             faxLabel.TabIndex = 21;
             faxLabel.Text = "Fax:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(108, 72);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(99, 20);
+            label1.TabIndex = 23;
+            label1.Text = "CustomerID";
             // 
             // northwindDataSet
             // 
@@ -421,16 +431,6 @@
             this.faxTextBox.Name = "faxTextBox";
             this.faxTextBox.Size = new System.Drawing.Size(200, 27);
             this.faxTextBox.TabIndex = 22;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(108, 72);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(99, 20);
-            label1.TabIndex = 23;
-            label1.Text = "CustomerID";
             // 
             // textBox1
             // 
