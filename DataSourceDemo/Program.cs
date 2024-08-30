@@ -16,6 +16,7 @@ namespace DataSourceDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // en esta parte se indica el form que se ejecutara al iniciar el programa 
             Application.Run(new EjemploConexion());
         }
     }
